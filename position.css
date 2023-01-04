@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+div{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    /* justify-content: start; */
+}
+hr {
+    border: 1px solid black;
+    opacity: 0.1;
+    margin: 0px 201px;
+    margin-bottom: 15px;
+  }
+form{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+#header{
+    position: sticky;
+    top: 0px;
+    height: 56px;
+    background: #343A40;
+}
+#title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 16px 13px ;
+    /* identical to box height, or 150% */
+    color: #FFFFFF;
+}
+#header_menu{
+    align-items: center;
+    width: 284.92px;
+    height: 40px;
+    justify-content: space-between;
+}
+.menu_bottono{
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.search_box{
+    width: 226px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.search_button{
+    display: flex;
+    width: 76.7px;
+    height: 38px;
+    border: 1px solid #28A745;
+    border-radius: 4px;
+    background-color: transparent;
+    color: green;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+.gray_part{
+    display: flex;
+    flex-direction:column;
+    background-color: #E9ECEF;
+    border-radius: 4.8px;
+}
+.paragrap{
+    display: flex;
+    flex-direction:column;
+    align-items: baseline;
+    margin: 186px;
+    margin-top: 64px;
+    margin-bottom: 80px;
+}
+.info_block{
+    flex-direction:column;
+    width: 380px;
+    padding: 1px 15px;
+    padding-right: 20.6px;
+    align-items: baseline;
+}
+.gruped_infoBlock{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 57px;
+    
+}
+#hello{
+    font-weight: 300;
+    font-size: 72px;
+    color: #212529;
+}
+#hello_paragraf{
+    color: #212529; 
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+button{
+    background-color: #6C757D;
+    border: 1px solid #6C757D;
+    padding: 13px 6px;
+    border-radius: 4.8px;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 20px; ;
+    margin-bottom: 16px;
+}
+#learn_more{
+    background-color: #007BFF;
+    border: 1px solid #007BFF;
+    padding: 13px 6px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+#headline{
+    color: #212529;
+    font-weight: 500;
+    font-size: 32px;
+}
+#copyRight{
+    position: absolute;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212529;
+    margin-left: 201px;
+}
+.dropbtn {
+    padding: 5px 13px;
+    width: 56px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    background-color: transparent;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: none;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #414541;}
+
+@media screen and (max-width: 740px) {
+    .gruped_infoBlock{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #copyRight{
+        margin-left: 15px;
+    }
+    hr {
+        margin: 0px 15px;
+      }
+    div.menu{
+        display: none;
+    }
+    div.paragrap{
+        margin: 0px 16px;
+        margin-top: 32px;
+        margin-bottom: 48px;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-right: 16px;
+    }
+    #header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .info_block{
+        width: fit-content;
+        padding-right: 30.6px;
+    }
+}
