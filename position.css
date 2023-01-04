@@ -48,9 +48,14 @@ form{
     justify-content: space-between;
 }
 .menu_bottono{
+    cursor: pointer;
     font-weight: 300;
     font-size: 15px;
     color: #FFFFFF;
+    transition: 0.1;
+}
+.menu_bottono:hover{
+    scale: 1.1;
 }
 .search_box{
     width: 226px;
@@ -120,6 +125,11 @@ button{
     margin-top: 20px; ;
     margin-bottom: 16px;
 }
+button:hover{
+    background-color: #8b949b;
+    border: 1px solid #8b949b;
+
+}
 #learn_more{
     background-color: #007BFF;
     border: 1px solid #007BFF;
@@ -128,6 +138,10 @@ button{
     font-size: 20px;
     color: #FFFFFF;
     font-size: 20px;
+}
+#learn_more:hover{
+    background-color: #228dff;
+    border: 1px solid #228dff;
 }
 #headline{
     color: #212529;
@@ -159,6 +173,7 @@ button{
   .dropdown-content {
     display: none;
     position: absolute;
+    right: 0;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
